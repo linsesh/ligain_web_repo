@@ -48,13 +48,13 @@ export default function PrivacyPolicy() {
         <li>Suppression de votre compte et de vos données</li>
         <li>Limitation ou opposition au traitement</li>
       </ul>
-      <p className="mb-4">Vous pouvez exercer ces droits en nous contactant à : <strong>[contact@ligain.com]</strong></p>
+      <p className="mb-4">Vous pouvez exercer ces droits en nous contactant à : <strong>contact@ligain.com</strong></p>
 
       <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4 pb-2 border-b border-gray-300">8. Contact</h2>
       <p className="mb-4">Pour toute question concernant la protection de vos données :</p>
       <ul className="mb-4 pl-6 list-disc">
         <li><strong>Ligain</strong></li>
-        <li>Email : <strong>[contact@ligain.com]</strong></li>
+        <li>Email : <strong>contact@ligain.com</strong></li>
       </ul>
     </div>
   );
