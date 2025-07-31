@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="font-sans leading-relaxed p-8 max-w-4xl mx-auto text-gray-800">
+    <div className="font-sans leading-relaxed p-8 max-w-4xl mx-auto text-gray-800 bg-white">
       <h1 className="text-4xl font-bold text-gray-900 mb-4">Politique de confidentialité</h1>
       <p className="mb-4"><strong>Dernière mise à jour : 20 juillet 2025</strong></p>
 
