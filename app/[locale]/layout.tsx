@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   description: "Platform for betting on football matches between friends",
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }>) {
-  const { locale } = params;
+  const { locale } = await params;
 
   return (
     <html lang={locale}>

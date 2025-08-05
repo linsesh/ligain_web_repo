@@ -1,7 +1,8 @@
 import { translations, Locale } from "@/lib/translations";
 
-export default function SupportPage({ params }: { params: { locale: Locale } }) {
-  const t = translations[params.locale];
+export default async function SupportPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const t = translations[locale];
 
   return (
     <div className="font-sans leading-relaxed p-8 max-w-4xl mx-auto text-gray-800 bg-white">

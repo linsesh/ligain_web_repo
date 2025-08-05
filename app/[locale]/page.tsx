@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { translations, Locale } from "@/lib/translations";
 
-export default function Home({ params }: { params: { locale: Locale } }) {
-  const t = translations[params.locale];
+export default async function Home({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const t = translations[locale];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-8 bg-black text-white">
@@ -30,13 +31,13 @@ export default function Home({ params }: { params: { locale: Locale } }) {
       <footer className="text-center">
         <div className="flex flex-col space-y-2">
           <Link 
-            href={`/${params.locale}/support`}
+            href={`/${locale}/support`}
             className="text-sm text-gray-300 hover:text-white underline"
           >
             {t.whatIsLigain}
           </Link>
           <Link 
-            href={`/${params.locale}/privacy`}
+            href={`/${locale}/privacy`}
             className="text-sm text-gray-300 hover:text-white underline"
           >
             {t.privacyPolicy}
