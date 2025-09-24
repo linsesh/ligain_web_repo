@@ -19,6 +19,17 @@ export const metadata: Metadata = {
   description: "Platform for betting on football matches between friends",
 };
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: locale === 'fr' ? 'Paris entre amis' : 'Bets between friends',
+    description: locale === 'fr' 
+      ? 'Plateforme pour parier sur les matches de football entre amis'
+      : 'Platform for betting on football matches between friends',
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params,

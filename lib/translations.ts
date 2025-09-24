@@ -12,6 +12,10 @@ export const translations = {
     contact: "Contact",
     contactDescription: "Si tu as des commentaires, des demandes ou des suggestions, contacte-moi via l'email suivant :",
     
+    // Account deletion
+    accountDeletion: "Suppression de compte",
+    accountDeletionDescription: "Si tu souhaites supprimer ton compte, tu peux simplement envoyer un email à l'adresse ci-dessous et nous nous occuperons de la suppression de toutes tes données.",
+    
     // Privacy page
     privacyTitle: "Politique de confidentialité",
     lastUpdated: "Dernière mise à jour : 20 juillet 2025",
@@ -82,6 +86,10 @@ export const translations = {
     supportAvailability: "It is currently only available for Ligue 1 matches.",
     contact: "Contact",
     contactDescription: "If you have comments, requests or suggestions, contact me via the following email:",
+    
+    // Account deletion
+    accountDeletion: "Account Deletion",
+    accountDeletionDescription: "If you want to delete your account, you can simply send an email to the address below and we will take care of deleting all your data.",
     
     // Privacy page
     privacyTitle: "Privacy Policy",

@@ -24,6 +24,14 @@ export default async function SupportPage({ params }: { params: Promise<{ locale
             <strong>contact@ligain.com</strong>
           </p>
         </div>
+        
+        <div className="mt-6 p-6 bg-blue-50 rounded-lg border border-blue-200">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">{t.accountDeletion}</h2>
+          <p className="text-lg leading-relaxed">
+            {t.accountDeletionDescription}{' '}
+            <strong>contact@ligain.com</strong>
+          </p>
+        </div>
       </div>
     </div>
   );
